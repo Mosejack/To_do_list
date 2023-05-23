@@ -1,10 +1,19 @@
-function addItem(list, inputField) { 
-    var list = document.getElementById(list);
-    var listItem = document.createElement("li");
-    listItem.innerText = inputField.value; 
-    list.appendChild(listItem);
-    inputField.value = '';
-    return false; 
-  }
-  
+function addItem(){
+    var ul = document.getElementById("dynamic-list");
+    var candidate = document.getElementById("list");
+    var li = document.createElement("li");
+    li.setAttribute('id',candidate.value);
+    li.appendChild(document.createTextNode(candidate.value));
+    ul.appendChild(li);
+    candidate.value = '';
+}
+
+function removeItem(){
+    var ul = document.getElementById("dynamic-list");
+    var candidate = document.getElementById("list");
+    var item = document.getElementById(candidate.value);
+    ul.removeChild(item);
+    candidate.value = '';
+}
+
 console.log('My code is running');

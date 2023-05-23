@@ -10,14 +10,16 @@
 <body>
     <h1>Moses Home Improvement list</h1>
     
-    <form onsubmit="return addItem('list', this.inputItem)"> 
-        <input type="text" id="inputItem" placeholder="Enter a Task">
-        <input type="submit">
-      
-      </form>
-      
-      <ul id="list">
-            </ul>
+    <input type="text" id="list"/>
+    <button onclick="addItem()">Add Task</button>
+    <button onclick="removeItem()">Delete Task</button>
+
+     <div><h3>
+        Thing to do
+      </h3>
+      <ul id="dynamic-list">
+      </ul>
+    </div> 
     <script src="./index.js"></script> 
 </body>
 </html>

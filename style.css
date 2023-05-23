@@ -1,7 +1,21 @@
+.container {
+    display: grid;
+    grid-template-columns: 50px 50px 50px 50px;
+    grid-template-rows: 50px 60px 30px;
+    column-gap: 5px;
+    row-gap: 5px;
+  }
+body {
+  background-color:darkblue;
+  font-size: small;
+  font-family: Tahoma, Arial, “Trebuchet MS”, Helvetica, sans-serif;
+  text-align: center;
+  margin-top:  auto;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: auto;
+    }
  h1 { 
     color: rgb(175, 122, 140);
-  }
+    }
   
-body {
-    background-color: darkblue;
-}
