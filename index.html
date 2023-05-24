@@ -1,20 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
-    <title>Document</title>
-</head>
+    <head>
+          <meta charset="UTF-8">
+          <meta http-equiv="X-UA-Compatible" content="IE=edge">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <link rel="stylesheet" href="./style.css">
+          <title>To Do List</title>
+    </head>
 <body>
     <h1>Moses Home Improvement list</h1>
     
     <input type="text" id="list"/>
-    <button onclick="addItem()">Add Task</button>
-    <button onclick="removeItem()">Delete Task</button>
-
-     <div><h3>
+         <div class="container">
+        <div class="ToDo">
+          <h2>To-Do List </h2>
+          <div class="row">
+            <input type="text" id="input-box" placeholder="Add Task">
+            <button>Add</button>
+          </div>
+          <ul id="list">
+            <li>task 1</li>
+            <li>task 1</li>
+            <li>task 1</li>
+          </ul>
+        </div>
+     </div>
         Thing to do
       </h3>
       <ul id="dynamic-list">
